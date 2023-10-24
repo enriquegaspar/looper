@@ -9,13 +9,13 @@ document.querySelector('.tecla_pom').onclick = tocaSom;
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
 //atribuindo o clique no botão "0" que é 0 1 item da lista de teclas.
-listaDeTeclas[0].onclick = tocaSomPom;
+listaDeTeclas[0].onclick = tocaSom;
 //criando referência variável contador, atribuindo o valor inicial como "0"
 let contador = 0;
 //Criando o código de repetição WHILE
 //enquanro o contador for menos que o comprimento da lista, tocará o som
 while(contador < listaDeTeclas.length){ 
-    listaDeTeclas[contador].onclick = tocaSomPom;
+    listaDeTeclas[contador].onclick = tocaSom;
     contador = contador + 1;
     console.log(contador);
 }
