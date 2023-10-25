@@ -3,7 +3,7 @@ function tocaSom(idElementoAudio){
     document.querySelector(idElementoAudio).play();
 }
 //criando/invocando a função tocaSomPom
-
+document.querySelector('.tecla_pom').onclick = tocaSom;
 
 //criando a referência constante listaDeTeclas
 const listaDeTeclas = document.querySelectorAll('.tecla');
@@ -15,7 +15,7 @@ let contador = 0;
 //Criando o código de repetição WHILE
 //enquanro o contador for menos que o comprimento da lista, tocará o som
 while(contador < listaDeTeclas.length){ 
-    const efeito = listaDeTeclas[conrador].classList[1];
+    const efeito = listaDeTeclas[contador].classList[1];
     const idAudio = "#som_"+efeito;
     listaDeTeclas[contador].onclick = function(){
         tocaSom(idAudio)
