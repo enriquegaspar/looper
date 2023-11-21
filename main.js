@@ -1,6 +1,12 @@
 //criando/declarando a função tocaSom com parâmetro ideElementoAudio
 function tocaSom(idElementoAudio){
-    document.querySelector(idElementoAudio).play();
+    const elemnto = document.querySelector(idElementoAudio);
+    //condicional if (se) e else(senão) operador de comparação && (E)
+    if (elemento && elementolocalName === 'audio'){
+       elemento.play();
+    }else{
+        console.log("elemento inválido não encontrado");
+    }
 }
 //criando a referência constante listaDeTeclas
 const listaDeTeclas = document.querySelectorAll('.tecla');
@@ -12,7 +18,7 @@ for(let contador = 0;contador < listaDeTeclas.length;contador++){
     const idAudio = `#som_${efeito}`; //junção com template string
     tecla.onclick = function(){ //função anônima para tocaSom
         tocaSom(idAudio);
-    
+
     }
     tecla.onkeydown = function(evento){ //função para pressionada
         if (evento.code === 'Space' || evento.code === 'Enter'){ 
