@@ -1,6 +1,6 @@
 //criando/declarando a função tocaSom com parâmetro ideElementoAudio
 function tocaSom(idElementoAudio){
-    const elemnto = document.querySelector(idElementoAudio);
+    const elemento = document.querySelector(idElementoAudio);
     //condicional if (se) e else(senão) operador de comparação && (E)
     if (elemento && elemento.localName === 'audio'){
        elemento.play();
